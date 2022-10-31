@@ -26,13 +26,15 @@ Setelah itu, lakukan konfigurasi pada file `.env.example`, dengan me-<em>rename<
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=laravel
+    DB_DATABASE=presensi_app
     DB_USERNAME=root
     DB_PASSWORD=
 
-Kemudian, Anda perlu menjalankan perintah berikut pada folder _root_ aplikasi untuk melakukan _migration_ dan _seeding_ pada _database_.
+Kemudian, Anda perlu menjalankan perintah berikut pada folder _root_ aplikasi untuk melakukan _migration_ dan _seeding_ pada _database_. Anda juga perlu meng-_install_ composer agar bisa melakukan _migration_ & _seeding_
 
     cd presensi-app
+    
+    composer install
     
     php artisan migrate:fresh --seed
 
