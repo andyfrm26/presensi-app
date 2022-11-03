@@ -1,12 +1,4 @@
 @extends('layout.main')
-
-  {{-- 
-  @auth
-  @else
-    auth()->user()->name
-  @endauth 
-  --}}
-
   @section('main')
     @if (session()->has('error'))
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -14,6 +6,13 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
     @endif
+
+    <div class="text-center py-5">
+    <h1>PresensiApp</h1>
+    <p class="text-muted mb-5" style="font-size: 12px">oleh: Kelompok 4 IESI G</p>
+
+      <img src="/img/undraw_newspaper.svg" class="my-2" alt="" width="200">
+    </div>
 
     <form action="/login" method="POST">
       @csrf
@@ -29,6 +28,6 @@
         @error('password') <div class="text-danger">{{ $message }}</div> @enderror
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
     </form>
   @endsection

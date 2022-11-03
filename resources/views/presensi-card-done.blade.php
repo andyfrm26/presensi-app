@@ -1,4 +1,4 @@
-<div class="card mt-3">
+<div class="card mt-3" style="z-index: 0">
   <h5 class="card-header">{{ $presensi->title }}</h5>
   <div class="card-body">
       <h5 class="card-title">{{ $presensi->note }}</h5>

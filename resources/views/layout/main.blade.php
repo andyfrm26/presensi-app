@@ -10,8 +10,8 @@
 
   <title>Presensi App | {{ $title }}</title>
 </head>
-<body>
-  <div class="container pt-4 border" style="max-width: 480px; min-height: 100vh;">
+<body class="bg-secondary bg-gradient">
+  <div class="container border bg-white pb-5" style="max-width: 480px; min-height: 100vh; padding-top: 70px">
     <div style="overflow:hidden; overflow-y:scroll">
       @yield('main')
     </div>

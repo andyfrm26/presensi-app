@@ -1,7 +1,7 @@
 @extends('layout.main')
 
-@include('navbar')
 
+@include('navbar')
 @section('main')
     <div class="mt-5">
         <h5 class="mb-5">Selamat datang, <strong>{{ $user->name }}</strong>!</h5>
